@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* *********************** */
+/* ***** Colors used ***** */
+/* *********************** */
+:root {
+	--cyan: hsl(179, 62%, 43%);
+	--bright-yellow: hsl(71, 73%, 54%);
+	--light-gray: hsl(204, 43%, 93%);
+	--grayish-blue: hsl(218, 22%, 67%);
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	font-family: "Karla", sans-serif;
+	font-size: 16px;
+	background-color: var(--light-gray);
+}
+
+/* ********************************** */
+/* ***** Mobile - width: 375px; ***** */
+/* ********************************** */
+
+main {
+	min-width: 375px;
+	width: 90%;
+	max-width: 1440px;
+	margin: 50px auto;
+
+	background-color: #fff;
+	box-shadow: 0px 0px 12px 5px rgba(53, 53, 53, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+
+	/* outline: 2px solid firebrick; */
+}
+/* ****************************** */
+/* ***** White Box ***** */
+/* ****************************** */
+
+.white-box {
+	padding: 35px 25px;
+}
+
+.thirty-day-heading {
+	padding: 30px 0px 30px 0px;
+	font-weight: bold;
+	color: var(--bright-yellow);
+
+	/* outline: 1px solid black; */
+}
+
+.grey-blue-text {
+	color: var(--grayish-blue);
+	line-height: 1.8;
+	font-weight: 400;
+
+	/* outline: 2px solid saddlebrown; */
+}
+
+h2 {
+	color: var(--cyan);
+	font-size: 1.5rem;
+	letter-spacing: -1px;
+
+	/* border: 2px solid goldenrod; */
+}
+
+h3 {
+	font-size: 1.3rem;
+	color: var(--light-gray);
+
+	/* border: 2px solid firebrick; */
+}
+
+p {
+	color: var(--light-gray);
+
+	/* border: 2px solid lime; */
+}
+
+li {
+	color: var(--light-gray);
+
+	/* border: 2px solid rebeccapurple; */
+}
+
+/* ******************************** */
+/* ***** Dark Cyan Box ***** */
+/* ******************************** */
+
+.dark-cyan-box {
+	padding: 35px 25px;
+	box-sizing: border-box;
+	background-color: var(--cyan);
+
+	/* border: 1px solid lightcoral; */
+}
+
+.dark-cyan-box p {
+	color: var(--light-gray);
+
+	/* outline: 2px solid lime; */
+}
+
+.twenty-nine-dollars {
+	text-transform: uppercase;
+	font-size: 40px;
+	/* font-size: 2.5rem; */
+	font-weight: bold;
+	padding: 20px 0px 20px 0px;
+
+	/* outline: 1px solid black; */
+}
+
+.twenty-nine-dollars span {
+	font-size: 18px;
+	font-weight: lighter;
+	text-transform: none;
+	margin-left: 9px;
+
+	/* outline: 1px solid lime; */
+}
+
+.full-access-text {
+	margin-bottom: 30px;
+	font-size: 1.1rem;
+
+	/* border: 1px solid lightcoral; */
+}
+
+/* **************************** */
+/* *********** Button ********** */
+/* **************************** */
+
+button {
+	outline: 0;
+	border: 0;
+	width: 100%;
+	margin: 25px 0 0 0;
+	padding: 20px 0;
+	border-radius: 5px;
+	font-family: "Karla", Sans-Serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: #fff;
+	background-color: var(--bright-yellow);
+	-webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}
+
+button:hover {
+	color: var(--bright-yellow);
+	background-color: #fff;
+	/* border: 8px solid var(--grayish-blue); */
+}
+
+/* ************************** */
+/* ***** Light Cyan Box ***** */
+/* ************************** */
+
+.light-cyan-box {
+	padding: 35px 25px;
+	box-sizing: border-box;
+	background-color: rgb(40, 195, 192);
+	color: var(--light-gray);
+	border-radius: 0 0 10px 0px;
+
+	/* border: 1px solid lightcoral; */
+}
+
+.why-us-heading {
+	padding-bottom: 25px;
+
+	/* border: 2px solid rebeccapurple; */
+}
+
+.light-cyan-box ul li {
+	list-style: none;
+	line-height: 2.5rem;
+
+	/* border: 1px solid black; */
+}
+
+/* *********************** */
+/* ***** Media Query ***** */
+/* *********************** */
+
+/* (iPad Mini - 768 x 1024) /*
+ ********************************************** */
+
+/*  max-width - 769px or LESS apply these rules */
+
+/* min-width - 769px or MORE apply these rules */
+
+@media (min-width: 769px) {
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+
+		flex-basis: 700px;
+		margin: 0;
+		position: absolute;
+
+		/* outline: 2px solid firebrick; */
+	}
+
+	.container {
+		font-size: 1.5rem;
+
+		/* border: 2px solid lightcoral; */
+	}
+
+	.white-box {
+		padding: 40px 40px;
+	}
+
+	h2 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-top: 35px;
+
+		/* outline: 2px solid rebeccapurple; */
+	}
+
+	.thirty-day-heading {
+		padding: 30px 0 15px 0;
+
+		/* border: 2px solid firebrick; */
+	}
+
+	h3 {
+		font-size: 2.2rem;
+		font-weight: 400;
+		margin: 30px 0 30px 0;
+
+		/* border: 2px solid lime; */
+	}
+
+	.grey-blue-text {
+		padding: 0 0 35px 0;
+		font-size: 1.8rem;
+
+		/* border: 2px solid lightcoral; */
+	}
+
+	.light-cyan-box {
+		display: flex;
+		width: 50%;
+		flex-direction: column;
+		padding: 70px 40px;
+
+		/* border: 2px solid greenyellow; */
+	}
+
+	.dark-cyan-box {
+		display: flex;
+		width: 50%;
+		flex-direction: column;
+		padding: 70px 40px;
+	}
+
+	.twenty-nine-dollars {
+		font-size: 4rem;
+
+		/* border: 2px solid darkorange; */
+	}
+
+	.dark-cyan-box p span {
+		font-size: 1.8rem;
+		font-weight: lighter;
+		margin-left: 18px;
+		vertical-align: 50%;
+
+		/* border: 2px solid greenyellow; */
+	}
+
+	.full-access-text {
+		font-size: 1.8rem;
+		font-weight: 400;
+
+		/* border: 2px solid darkorange; */
+	}
+
+	.sign-up-btn {
+		padding: 30px 30px;
+		font-size: 1.9rem;
+
+		/* border: 2px solid tomato; */
+	}
+
+	.light-cyan-box {
+		padding: 70px 40px;
+
+		/* border: 2px solid hotpink; */
+	}
+
+	.why-us-heading {
+		margin-bottom: 1rem;
+
+		/* border: 2px solid rebeccapurple; */
+	}
+
+	.light-cyan-box ul li {
+		/* line-height: 1rem; */
+
+		/* border: 2px solid firebrick; */
+	}
+}
